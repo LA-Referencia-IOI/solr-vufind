@@ -3,10 +3,9 @@
 set -eu
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-PROJECT_DIR=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
 COMPOSE_FILE="$SCRIPT_DIR/docker-compose.solr-nightly.yml"
 SOURCE_DIR="$SCRIPT_DIR/vufind"
-RUNTIME_DIR="$PROJECT_DIR/volumes/solr"
+RUNTIME_DIR="$SCRIPT_DIR/volume/solr"
 
 CORE_NAMES="biblio authority reserves website"
 
