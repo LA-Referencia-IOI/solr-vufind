@@ -19,7 +19,7 @@ services:
       - -f
       - --user-managed
     volumes:
-      - ../volumes/solr:/var/solr
-      - ../volumes/solr/data/jars/MarcImporter.jar:/opt/solr/server/solr-webapp/webapp/WEB-INF/lib/MarcImporter.jar:ro
-      - ../volumes/solr/data/jars/browse-handler.jar:/opt/solr/server/solr-webapp/webapp/WEB-INF/lib/browse-handler.jar:ro
-      - ../volumes/solr/data/jars/sqlite-jdbc-3.39.3.0.jar:/opt/solr/server/solr-webapp/webapp/WEB-INF/lib/sqlite-jdbc-3.39.3.0.jar:ro
+      - ./volumes/solr:/var/solr
+      - ./volumes/solr/data/jars/MarcImporter.jar:/opt/solr/server/solr-webapp/webapp/WEB-INF/lib/MarcImporter.jar:ro
+      - ./volumes/solr/data/jars/browse-handler.jar:/opt/solr/server/solr-webapp/webapp/WEB-INF/lib/browse-handler.jar:ro
+      - ./volumes/solr/data/jars/sqlite-jdbc-3.39.3.0.jar:/opt/solr/server/solr-webapp/webapp/WEB-INF/lib/sqlite-jdbc-3.39.3.0.jar:ro
