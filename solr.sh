@@ -3,10 +3,9 @@
 set -eu
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-PROJECT_DIR=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
 COMPOSE_FILE="$SCRIPT_DIR/docker-compose.solr-9-11.yml"
 SOURCE_DIR="$SCRIPT_DIR/vufind"
-RUNTIME_DIR="$PROJECT_DIR/volumes/solr"
+RUNTIME_DIR="$SCRIPT_DIR/volume/solr"
 SOLR_VERSION="${SOLR_VERSION:-9.11.0}"
 
 export SOLR_VERSION
