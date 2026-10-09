@@ -12,7 +12,7 @@ services:
         -XX:+UseG1GC
         -XX:MaxGCPauseMillis=200
         -Xlog:gc*:stdout
-        -Dsolr.security.allow.urls.enabled=false
+        -Dsolr.disable.allowUrls=true
         -Dsolr.logs.dir=/var/solr/logs
         --add-modules=jdk.incubator.vector
     command:
