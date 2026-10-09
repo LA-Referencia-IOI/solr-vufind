@@ -6,3 +6,5 @@ vufind/*/index
 vufind/*/spellchecker
 vufind/*/spellShingle
 vufind/*/tlog
+volume
+.DS_Store
