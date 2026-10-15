@@ -1,7 +1,8 @@
+name: solr-vufind
 services:
-  solr-9-11:
+  solr-vufind:
     image: solr:${SOLR_VERSION:-9.11.0}
-    container_name: solr-9-11
+    container_name: solr-vufind
     restart: unless-stopped
     ports:
       - "${SOLR_PORT:-8983}:8983"
